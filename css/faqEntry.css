@@ -1,0 +1,77 @@
+.Title {
+    color: var(--medium-blue);
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+    margin-left: 0.75em;
+  
+}
+
+.FAQCard {
+    position: relative;
+    background-color: white;
+    color: var(--dark-blue);
+    border-radius: 20px;
+    text-align: center;
+    padding: 2.5em;
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQCard h2 {
+    text-align: left;
+    border-bottom: 1px solid var(--medium-blue);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+.FAQCard .Footer {
+    justify-content: end;
+    color: var(--medium-blue);
+    margin-top: 1em;
+    margin-bottom: -1em;
+    font-weight: normal;
+    font-size: medium;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5em;
+}
+
+.FAQCard .Footer > p:first-of-type:after{
+    content: ",";
+}
+
+.FAQCard > p {
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-weight: normal;
+    font-size: medium;
+    overflow: hidden;
+}
+
+.RoundButton#DeleteButton {
+    position: absolute;
+    right: 2.5em;
+    top: 1.2em;
+}
+
+.RoundButton#EditButton {
+    position: absolute;
+    right: 5.5em;
+    top: 1.2em;
+}

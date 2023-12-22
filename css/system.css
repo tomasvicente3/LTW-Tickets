@@ -1,0 +1,213 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.UserCard {
+    background-color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 25em;
+    height: 10em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.UserCard:not(.publicClientName) {
+    height: 15em;
+}
+
+h2:not(#Tickets *) {
+    color: var(--medium-blue);
+    margin-bottom: 0.5em;
+    font-size: 2.5ch;
+}
+
+h1 {
+    color: var(--medium-blue);
+    margin: 0.5em;
+}
+
+p {
+    color: var(--dark-blue);
+}
+
+section {
+    overflow-x: scroll;
+    min-height: fit-content;
+}
+
+.UserCard .NoContentMessage {
+    font-size: medium;
+    font-weight: normal;
+    padding: 0em;
+}
+
+.UserCard .ButtonTitle {
+    margin-top: 0.5em;
+}
+
+.UserCard .Departments {
+    display: flex;
+    flex-direction: row;
+}
+
+#Departments {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+}
+
+#DepartmentForm {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+}
+
+#SubmitDepartments {
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.DepartmentName:not(:last-of-type)::after {
+    content: "|";
+    padding: 0em 0.2em;
+    color: var(--medium-blue);
+}
+
+#Departments .DepartmentTag {
+    background-color: white;
+    color: var(--header-blue);
+    max-width: fit-content;
+    max-height: fit-content;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.NoContentMessage {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.TicketCard {
+    width: 20em;
+    line-height: 1.5em;
+    height: 100%;
+}
+
+.UpgradeOptions p {
+    color: inherit;
+}
+
+.DepartmentField i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: inline-flex;
+}
+
+.DepartmentField {
+    display: flex;
+    flex-direction: row;
+}
+
+.ClientSection, .AgentSection, .AdminSection {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+}
+
+select {
+    color: white;
+    background-color: var(--medium-blue);
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.25em;
+    margin-right: 0.50em;
+    outline: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+#PrioritySelection,
+#StatusSelection {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    align-items: center;
+}
+
+#PrioritySelection input[type="radio"]:checked+label,
+#StatusSelection input[type="radio"]:checked+label {
+    outline: 5px solid Highlight;
+    outline: 5px solid -webkit-focus-ring-color;
+}
+
+#HashtagInput,
+#DepartmentInput,
+#AgentInput {
+    font-size: medium;
+    font-weight: bold;
+    color: var(--dark-blue);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    border: 0cm;
+    padding: 0.8em;
+    border-radius: 2em;
+    padding-right: 6em;
+    padding-left: 1.75em;
+}
+
+.hashtag-label {
+    position: relative;
+    display: none;
+}
+
+.hashtag-label::before {
+    content: "#";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+#SubmitFilterTicket {
+    margin-left: 0.50em;
+}
+
+#SubmitFilterTicket i {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+select {
+    border: 0px;
+}
+
+.TicketSection {
+    margin-bottom: 1em;
+}
+
+.TicketCard {
+    margin-top: 1em;
+}

@@ -1,0 +1,102 @@
+.Title {
+    color: var(--medium-blue);
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-top: 3em;
+
+}
+
+.TicketCard {
+    position: relative;
+    background-color: white;
+    color: var(--dark-blue);
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 2.5em;
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+.TicketCard h2 {
+    text-align: left;
+    border-bottom: 1px solid var(--medium-blue);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+.TicketCard h3 {
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.TicketCard p {
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-weight: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.Changes p {
+    margin-left: 2em;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.Changes a:link p,
+.Changes a:visited p,
+.Changes a:active p {
+    background-color: var(--medium-blue);
+}
+
+.Changes a:hover p {
+    background-color: var(--header-blue);
+}
+
+#ChangeContainer {
+    display: flex;
+    align-items: baseline;
+    font-size: medium;
+}
+
+.Tag {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.Status {
+    background-color: var(--medium-blue);
+}
+
+.Changed {
+    font-weight: bold;
+}
+
+.Text::before,
+.Text::after {
+    content: '"';
+    font-weight: bold;
+}

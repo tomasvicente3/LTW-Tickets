@@ -1,0 +1,181 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ProfileHeader {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1ch;
+}
+
+h1 {
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    color: var(--medium-blue);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.TitleInput input,
+.TitleInput textarea {
+    text-align: center;
+}
+
+
+.ProfileCard {
+    background-color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+.ProfileCard .CardHeader {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.ProfileCard .CardHeader i {
+    grid-column-start: 3;
+    color: var(--medium-blue);
+}
+
+.ProfileCard .CardHeader i:hover {
+    color: var(--header-blue);
+}
+
+.ProfileCard form {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto auto auto;
+    box-sizing: border-box;
+}
+
+.ProfileCard .TitleInput {
+    align-items: center;
+}
+
+.ProfileCard .UserInfo:read-only {
+    color: slategray;
+    pointer-events: none;
+}
+
+.ProfileCard form button {
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.ProfileCard .TitleInput {
+    margin: 1em;
+}
+
+#SubmitEdit {
+    margin: 1em;
+}
+
+.ProfileCard .ClearanceTag {
+    grid-column-start: 2;
+    color: white;
+    background-color: var(--header-blue);
+}
+
+.ProfileCard .DepartmentTag {
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+}
+
+.ProfileCard #Departments {
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 100%;
+}
+
+.ProfileCard #DepartmentsList {
+    max-width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 1em;
+    overflow-x: scroll;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    display: inline-flex;
+}
+
+.DepartmentField i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TitleInput .ButtonTitle h2 {
+    margin: 0;
+    justify-items: center;
+}
+
+.ProfileCard #AlterPasswordButton {
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.ProfileCard .ErrorMessage {
+    text-align: center;
+}
+
+.ProfileCard .ErrorMessage.FadeOut {
+    animation: error-message 1s 1;
+    -webkit-animation: error-message 1s 1;
+    animation-fill-mode: forwards;
+
+    /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@keyframes error-message {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes error-message {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.Tag {
+    font-size: larger;
+}
+
+.DepartmentTag {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.NoContentMessage {
+    font-size: large;
+    font-weight: bold;
+    padding: 1em;
+}

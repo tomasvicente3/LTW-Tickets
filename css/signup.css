@@ -1,0 +1,92 @@
+body {
+    display: grid;
+    /* Ver porque é que main tem um slight scroll */
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+form * {
+    margin: 0.3em;
+}
+
+.IconField {
+    display: grid;
+    align-items: center;
+}
+
+form h2 {
+    color: var(--medium-blue);
+    font-size: 3em;
+}
+
+form button.RoundButton {
+    margin: 0.5em;
+    font-size: 2em;
+}
+
+form input {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--dark-blue);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    border: 0cm;
+    padding: 0.8em;
+    border-radius: 2em;
+    padding-right: 6em;
+
+}
+
+form i {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    color: var(--header-blue);
+    z-index: 1;
+    margin-right: 1.7em;
+}
+
+form .ErrorMessage {
+    position: absolute;
+    /* Makes it so the other elements don't slide down when it appears, but less tall screens are not responsive */
+    bottom: 15%;
+    color: var(--error-orange);
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+::placeholder {
+    color: var(--dark-blue);
+    font-size: x-large;
+    font-weight: bold;
+    opacity: 1;
+}
+
+form p {
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+form a:link p,
+form a:visited p,
+form a:active p {
+    color: var(--medium-blue);
+}
+
+form a:hover p {
+    color: var(--header-blue);
+}

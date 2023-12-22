@@ -1,0 +1,98 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    margin-left: 3em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form textarea {
+    min-width: 100%;
+}
+
+form input {
+    min-width: 50%;
+
+}
+
+@media (max-width: 1000px) {
+    form {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 100%;
+    }
+
+}
+
+
+#FormFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form #ContentForm,
+#content {
+    min-height: 20em;
+    font-size: 1em;
+}
+
+.TitleInput textarea {
+    text-align: start;
+}
+
+#FormFooter button {
+    min-width: 10%;
+    margin-top: 1em;
+}
+
+h1 {
+    align-self: flex-start;
+    color: var(--medium-blue);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.ErrorMessage {
+    margin: 0.3em;
+}
+
+
+.AddButton {
+    padding-left: 3em;
+}
+
+.InputIcon {
+    position: relative;
+}
+
+.InputIcon>i {
+    color: var(--medium-blue);
+    font-weight: bold;
+    position: absolute;
+    transform: translate(30%, -50%);
+    top: 1.5em;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+}
+
+.InputIcon .AutocompleteList {
+    min-width: 100%;
+}
+
+textarea {
+    font-size: 1.15em !important;
+}

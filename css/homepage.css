@@ -1,0 +1,171 @@
+main {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.TicketCard {
+    width: 20em;
+    line-height: 1.5em;
+    height: 100%;
+}
+
+.TicketCard .TicketHeader {
+    border-bottom: 1px solid var(--medium-blue);
+    padding: 0.5em;
+    height: 30%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TicketCard h2 {
+    font-weight: bold;
+    font-size: x-large;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.TicketCard p {
+    padding-top: 1em;
+    font-weight: normal;
+    font-size: medium;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.TicketCard .TicketBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1em;
+    height: 70%;
+    flex-grow: 1;
+}
+
+.TicketSection {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    max-width: 100%;
+    height: 20em;
+    padding-bottom: 2em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    font-size: 1em;
+}
+
+header a:hover .ButtonTitle{
+    color: var(--header-blue) !important;
+}
+
+header a:hover button {
+    background-color: var(--header-blue);
+}
+
+.ButtonTitle.FAQ {
+    font-size: 14px;
+}
+
+.NoContentMessage {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1em;
+}
+
+select {
+    color: white;
+    background-color:var(--medium-blue);
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.25em;
+    margin-right: 0.50em;
+    outline: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+#PrioritySelection, #StatusSelection {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    align-items: center;
+}
+
+#PrioritySelection input[type="radio"]:checked+label, #StatusSelection input[type="radio"]:checked+label {
+    outline: 5px solid Highlight;
+    outline: 5px solid -webkit-focus-ring-color;
+}
+
+#HashtagInput,#DepartmentInput,#AgentInput {
+    font-size: medium;
+    font-weight: bold;
+    color: var(--dark-blue);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    border: 0cm;
+    padding: 0.8em;
+    border-radius: 2em;
+    padding-right: 6em;
+    padding-left: 1.75em;
+}
+
+.hashtag-label {
+    position: relative;
+    display: none;
+}
+  
+.hashtag-label::before {
+    content: "#";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+#SubmitFilterTicket {
+    margin-left: 0.50em;
+}
+
+#SubmitFilterTicket i {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+select {
+    border: 0px;
+}
+
+.TicketSection{
+    margin-bottom: 1em;
+}
+
+.TicketCard {
+    margin-top: 1em;
+}

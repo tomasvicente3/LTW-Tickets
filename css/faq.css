@@ -1,0 +1,77 @@
+.ButtonTitle {
+    margin-left: 0.75em;
+}
+
+.FAQCard {
+    background-color: white;
+    color: var(--dark-blue);
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 2.5em;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.FAQCard h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large;
+    box-sizing: border-box;
+}
+
+.FAQCard .IconTitle {
+    border-bottom: 1px solid var(--medium-blue);
+    padding-bottom: 1em;
+}
+
+.FAQCardDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FAQCardDetails button {
+    margin: 1em;
+}
+
+.FAQCardContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 1em;
+    font-weight: normal;
+    font-size: large;
+}
+
+.FAQCardContent p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.FAQCardFooter {
+    margin: 0.5em;
+    color: var(--medium-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.FAQCardFooter p:first-child::after {
+    content: ",";
+}
+
+.FAQCardFooter p:first-child {
+    margin-right: 0.5em;
+}
+
+.NoContentMessage {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1em;
+}

@@ -1,0 +1,160 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    margin-left: 3em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form textarea {
+    min-width: 100%;
+}
+
+form input,
+.AutocompleteList {
+    min-width: 50%;
+
+}
+
+@media (max-width: 1000px) {
+    form {
+        width: 90%;
+    }
+
+    form input,
+    .AutocompleteList {
+        min-width: 70%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 100%;
+    }
+
+    form input,
+    .AutocompleteList {
+        min-width: 100%;
+    }
+
+}
+
+#FormFooter {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form #DescriptionForm,
+#description {
+    min-height: 20em;
+}
+
+.TitleInput input:not(#PrioritySelection *),
+.TitleInput textarea {
+    text-align: start;
+}
+
+.InputIcon .AutocompleteList {
+    min-width: 100%;
+}
+
+#FormFooter button {
+    min-width: 10%;
+}
+
+h1 {
+    align-self: flex-start;
+    color: var(--medium-blue);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+form input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+#PrioritySelection, #StatusSelection {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    align-items: center;
+}
+
+
+#PrioritySelection input[type="radio"]:checked+label, #StatusSelection input[type="radio"]:checked+label {
+    outline: 5px solid Highlight;
+    outline: 5px solid -webkit-focus-ring-color;
+}
+
+.ErrorMessage {
+    margin: 0.3em;
+}
+
+#HashtagInput {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 1em;
+
+}
+
+
+.AddButton {
+    padding-left: 3em;
+}
+
+.InputIcon {
+    position: relative;
+}
+
+#HashtagInput .TitleInput {
+    row-gap: 1em;
+}
+
+.InputIcon>i {
+    color: var(--medium-blue);
+    font-weight: bold;
+    position: absolute;
+    transform: translate(30%, -50%);
+    top: 1.5em;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+}
+
+#HashtagTitle {
+    margin: 0.5em 0em;
+}
+
+#HashtagTitle button,
+.HashtagField button {
+    width: 1em;
+    height: 1em;
+}
+
+.HashtagField {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.HashtagField i {
+    color: var(--medium-blue);
+}
+
+.Tag {
+    background-color: var(--header-blue);
+}
